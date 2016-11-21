@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "outDir": "./build/",
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "inlineSourceMap": true,
+        "inlineSources": false,
+        "noImplicitAny": true,
+        "noLib": false,
+        "noEmitOnError": true,
+        "preserveConstEnums": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": false,
+        "removeComments": false
+    },
+    "exclude": [
+        "node_modules",
+        "typings-local",
+        "typings/browser",
+        "typings/browser.d.ts",
+        "build"
+    ]
+}
