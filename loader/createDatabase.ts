@@ -1,16 +1,27 @@
+import DB = require('../db/DB');
 import optimist = require('optimist');
 
-let dbName = optimist.argv.dbName;
-let dbHostname = optimist.argv.hostname;
-
-if (dbName == null) {
-    console.log('no database name has been provided');
-    process.exit(0);
+const db = DB.db;
+async function createDB() {
+    return db.query(`CREATE TABLE IF NOT EXISTS stockinfo (
+                     id bigserial primary key,
+                     symbol varchar(20) NOT NULL,
+                     date timestamp default NULL,
+                    info jsonb)`).then(() => {
+            return db.query(`CREATE INDEX IF NOT EXISTS generalindex on stockinfo(symbol, date)`);
+        }).then(() => {
+            console.log('Tables created');
+        });
 }
 
-if (dbHostname == null) {
-    console.log('no database address has been provided');
-    process.exit(0);
+async function dropDB() {
+    return db.query('drop table stockinfo');
 }
 
+if (optimist.argv.mode === 'create') {
+    createDB().then(() => process.exit(0));
+}
 
+if (optimist.argv.mode === 'drop') {
+    dropDB().then(() => process.exit(0));
+}
