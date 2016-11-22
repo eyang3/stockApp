@@ -1,0 +1,3 @@
+// for updating data with newest stock data 
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvYWRlci91cGRhdGVEYXRhYmFzZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSwyQ0FBMkMiLCJmaWxlIjoibG9hZGVyL3VwZGF0ZURhdGFiYXNlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gZm9yIHVwZGF0aW5nIGRhdGEgd2l0aCBuZXdlc3Qgc3RvY2sgZGF0YSJdfQ==

@@ -1,0 +1,9 @@
+"use strict";
+class DB {
+    constructor(options) {
+        // lets do something new
+    }
+}
+exports.DB = DB;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRiL0RCLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFHQTtJQUNJLFlBQVksT0FBc0I7UUFDOUIsd0JBQXdCO0lBQzVCLENBQUM7QUFDTCxDQUFDO0FBSlksVUFBRSxLQUlkLENBQUEiLCJmaWxlIjoiZGIvREIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgcGcgPSByZXF1aXJlKCdwZycpO1xyXG5pbXBvcnQgcGdwID0gcmVxdWlyZSgncGctcHJvbWlzZScpO1xyXG5cclxuZXhwb3J0IGNsYXNzIERCIHtcclxuICAgIGNvbnN0cnVjdG9yKG9wdGlvbnM6IHBnLlBvb2xDb25maWcpIHtcclxuICAgICAgICAvLyBsZXRzIGRvIHNvbWV0aGluZyBuZXdcclxuICAgIH1cclxufVxyXG5cclxuXHJcbiJdfQ==
