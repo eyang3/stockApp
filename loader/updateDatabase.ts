@@ -1,8 +1,9 @@
 import request = require('request');
 import DB = require('../db/DB');
-import { Readable, Writable } from 'stream';
+import { Readable, Writable, Transform } from 'stream';
 import { StockInfo, OptionData } from '../models/StockInfo';
 import _ = require('lodash');
+import fs = require('fs');
 
 const db = DB.db;
 const MAX_BUFFER = 100;
@@ -15,6 +16,19 @@ async function dbWrite(buffer: StockInfo[]) {
         });
         return t.batch(queryBuffer);
     });
+}
+
+export class InfoLookup extends Transform {
+    constructor() {
+        super({ objectMode: true });
+    }
+    _transform(chunk: string, encoding: string, next: Function) {
+        var lines = chunk.split('\n');
+        _.each(lines, (line) => {
+            this.push(line.split(',')[0]);
+        });
+        next();
+    }
 }
 
 export class DBWriter extends Writable {
@@ -35,35 +49,10 @@ export class DBWriter extends Writable {
         this.buffer = [];
     }
 }
+console.log(__dirname);
+let dataStream = fs.createReadStream(__dirname + '/../../StockList/StockList', { encoding: 'UTF-8' })
+    .pipe(new InfoLookup());
 
-let m: StockInfo[] = [];
-m.push({
-    symbol: 'AAA',
-    date: new Date(),
-    info: {
-        gets: null,
-        puts: null,
-        eps: 10,
-        beta: 1.2,
-        volume: 100,
-
-    }
+dataStream.on('end', () => {
+    console.log('done');
 });
-
-m.push({
-    symbol: 'ABA',
-    date: new Date(),
-    info: {
-        gets: null,
-        puts: null,
-        eps: 12,
-        beta: 1,
-        volume: 10,
-
-    }
-});
-
-dbWrite(m)
-    .then(() => {
-        console.log('done');
-    });
