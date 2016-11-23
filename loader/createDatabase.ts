@@ -2,12 +2,13 @@ import DB = require('../db/DB');
 import optimist = require('optimist');
 
 const db = DB.db;
+
 async function createDB() {
     return db.query(`CREATE TABLE IF NOT EXISTS stockinfo (
                      id bigserial primary key,
                      symbol varchar(20) NOT NULL,
                      date timestamp default NULL,
-                    info jsonb)`).then(() => {
+                     info jsonb)`).then(() => {
             return db.query(`CREATE INDEX IF NOT EXISTS generalindex on stockinfo(symbol, date)`);
         }).then(() => {
             console.log('Tables created');

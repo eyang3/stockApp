@@ -3,14 +3,15 @@ export interface OptionData {
     openInterest: number;
     volume: number;
     strike: number;
+    expiration: Date;
 }
 
 export interface StockInfo {
     date: Date;
     symbol: string;
     info: {
-        get: OptionData[];
-        put: OptionData[];
+        gets: OptionData[];
+        puts: OptionData[];
         beta: number;
         eps: number;
         volume: number;
