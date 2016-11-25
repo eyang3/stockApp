@@ -9,12 +9,14 @@ export interface OptionData {
 export interface StockInfo {
     date: Date;
     symbol: string;
-    eps: number;
     info: {
         gets: OptionData[];
         puts: OptionData[];
         beta: number;
         eps: number;
+        price: number;
+        optionPriceConsensus: number;
+        optionPriceVariance: number;
         volume: number;
     };
 }
