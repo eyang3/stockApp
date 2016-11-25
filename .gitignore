@@ -23,7 +23,7 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build
 typings
-build/Release
+build/
 src/build
 # Dependency directory
 node_modules
