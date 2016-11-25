@@ -15,6 +15,7 @@ export interface StockInfo {
         beta: number;
         eps: number;
         price: number;
+        div: number;
         optionPriceConsensus: number;
         optionPriceVariance: number;
         volume: number;
