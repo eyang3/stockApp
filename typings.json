@@ -1,5 +1,6 @@
 {
   "globalDependencies": {
+    "bluebird": "registry:dt/bluebird#3.0.0+20161007114152",
     "form-data": "registry:dt/form-data#0.0.0+20160724024111",
     "lodash": "registry:dt/lodash#4.14.0+20161110215204",
     "node": "registry:dt/node#6.0.0+20161110151007",

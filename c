@@ -2,3699 +2,978 @@
   database: 'stockApp',
   password: 'tcinTE5%k',
   user: 'postgres' }
-/home/eyang/stockApp/build/loader
-Symbol
-MMM
-ABT
-ABBV
-ACN
-ATVI
-AYI
-ADBE
-AAP
-AES
-AET
-AMG
-AFL
-A
-APD
-AKAM
-ALK
-ALB
-AA
-ALXN
-ALLE
-AGN
-ADS
-LNT
-ALL
-GOOGL
-GOOG
-MO
-AMZN
-AEE
-AAL
-AEP
-AXP
-AIG
-AMT
-AWK
-AMP
-ABC
-AME
-AMGN
-APH
-APC
-ADI
-ANTM
-AON
-APA
-AIV
-AAPL
-AMAT
-ADM
-AJG
-AIZ
-T
-ADSK
-ADP
-AN
-AZO
-AVGO
-AVB
-AVY
-BHI
-BLL
-BAC
-BCR
-BAX
-BBT
-BDX
-BBBY
-BRK-B
-BBY
-BIIB
-BLK
-HRB
-BA
-BWA
-BXP
-BSX
-BMY
-BF-B
-CHRW
-CA
-COG
-CPB
-COF
-CAH
-KMX
-CCL
-CAT
-CBG
-CBS
-CELG
-CNC
-CNP
-CTL
-CERN
-CF
-SCHW
-CHK
-CVX
-CMG
-CB
-CHD
-CI
-XEC
-CINF
-CTAS
-CSCO
-C
-CFG
-CTXS
-CME
-CMS
-COH
-CTSH
-CL
-CMCSA
-CMA
-CAG
-CXO
-COP
-ED
-STZ
-GLW
-COST
-CCI
-CSRA
-CSX
-CMI
-CVS
-DHI
-DHR
-DRI
-DVA
-DE
-DLPH
-DAL
-XRAY
-DVN
-DO
-DLR
-DFS
-DISCA
-DISCK
-DG
-DLTR
-D
-DOV
-DOW
-DPS
-DTE
-DD
-DUK
-DNB
-ETFC
-EMN
-ETN
-EBAY
-ECL
-EIX
-EW
-EA
-EMC
-EMR
-ENDP
-ETR
-EOG
-EQT
-EFX
-EQIX
-EQR
-ESS
-EL
-ES
-EXC
-EXPE
-EXPD
-ESRX
-EXR
-XOM
-FFIV
-FB
-FAST
-FRT
-FDX
-FIS
-FITB
-FSLR
-FE
-FISV
-FLIR
-FLS
-FLR
-FMC
-FTI
-FL
-F
-FTV
-FBHS
-BEN
-FCX
-FTR
-GPS
-GRMN
-GD
-GE
-GGP
-GIS
-GM
-GPC
-GILD
-GPN
-GS
-GT
-GWW
-HAL
-HBI
-HOG
-HAR
-HRS
-HIG
-HAS
-HCA
-HCP
-HP
-HSIC
-HES
-HPE
-HOLX
-HD
-HON
-HRL
-HST
-HPQ
-HUM
-HBAN
-ITW
-ILMN
-IR
-INTC
-ICE
-IBM
-IP
-IPG
-IFF
-INTU
-ISRG
-IVZ
-IRM
-JBHT
-JEC
-JNJ
-JCI
-JPM
-JNPR
-KSU
-K
-KEY
-KMB
-KIM
-KMI
-KLAC
-KSS
-KHC
-KR
-LB
-LLL
-LH
-LRCX
-LM
-LEG
-LEN
-LUK
-LVLT
-LLY
-LNC
-LLTC
-LKQ
-LMT
-L
-LOW
-LYB
-MTB
-MAC
-M
-MNK
-MRO
-MPC
-MAR
-MMC
-MLM
-MAS
-MA
-MAT
-MKC
-MCD
-MCK
-MJN
-MDT
-MRK
-MET
-KORS
-MCHP
-MU
-MSFT
-MHK
-TAP
-MDLZ
-MON
-MNST
-MCO
-MS
-MSI
-MUR
-MYL
-NDAQ
-NOV
-NAVI
-NTAP
-NFLX
-NWL
-NFX
-NEM
-NWSA
-NWS
-NEE
-NLSN
-NKE
-NI
-NBL
-JWN
-NSC
-NTRS
-NOC
-NRG
-NUE
-NVDA
-ORLY
-OXY
-OMC
-OKE
-ORCL
-OI
-PCAR
-PH
-PDCO
-PAYX
-PYPL
-PNR
-PBCT
-PEP
-PKI
-PRGO
-PFE
-PCG
-PM
-PSX
-PNW
-PXD
-PBI
-PNC
-RL
-PPG
-PPL
-PX
-PCLN
-PFG
-PG
-PGR
-PLD
-PRU
-PEG
-PSA
-PHM
-PVH
-QRVO
-QCOM
-PWR
-DGX
-RRC
-RTN
-O
-RHT
-REGN
-RF
-RSG
-RAI
-RHI
-ROK
-COL
-ROP
-ROST
-RCL
-R
-SPGI
-CRM
-SCG
-SLB
-SNI
-STX
-SEE
-SRE
-SHW
-SIG
-SPG
-SWKS
-SLG
-SJM
-SNA
-SO
-LUV
-SWN
-SE
-STJ
-SWK
-SPLS
-SBUX
-HOT
-STT
-SRCL
-SYK
-STI
-SYMC
-SYF
-SYY
-TROW
-TGT
-TEL
-TGNA
-TDC
-TSO
-TXN
-TXT
-BK
-CLX
-KO
-HSY
-MOS
-TRV
-DIS
-TMO
-TIF
-TWX
-TJX
-TMK
-TSS
-TSCO
-TDG
-RIG
-TRIP
-FOXA
-FOX
-TYC
-TSN
-USB
-UDR
-ULTA
-UA
-UNP
-UAL
-UNH
-UPS
-URI
-UTX
-UHS
-UNM
-URBN
-VFC
-VLO
-VAR
-VTR
-VRSN
-VRSK
-VZ
-VRTX
-VIAB
-V
-VNO
-VMC
-WMT
-WBA
-WM
-WAT
-WFC
-HCN
-WDC
-WU
-WRK
-WY
-WHR
-WFM
-WMB
-WLTW
-WEC
-WYN
-WYNN
-XEL
-XRX
-XLNX
-XL
-XYL
-YHOO
-YUM
-ZBH
-ZION
-ZTS
-A
-AA
-AA-B
-AA.P
-AAC
-AAN
-AAP
-AAT
-AAV
-AB
-ABB
-ABBV
-ABC
-ABEV
-ABG
-ABM
-ABR
-ABR-A
-ABR-B
-ABR-C
-ABRN
-ABT
-ABX
-AC
-ACC
-ACCO
-ACH
-ACM
-ACN
-ACP
-ACRE
-ACV
-ACW
-ADC
-ADM
-ADNT
-ADPT
-ADS
-ADSW
-ADX
-AEB
-AED
-AEE
-AEG
-AEH
-AEK
-AEL
-AEM
-AEO
-AEP
-AER
-AES
-AES-C
-AET
-AEUA
-AF
-AF-C
-AFA
-AFB
-AFC
-AFG
-AFGE
-AFGH
-AFI
-AFL
-AFS-A
-AFS-B
-AFS-C
-AFS-D
-AFS-E
-AFS-F
-AFSD
-AFSS
-AFST
-AFT
-AFW
-AG
-AGC
-AGCO
-AGD
-AGI
-AGM
-AGM-A
-AGM-B
-AGM-C
-AGM.A
-AGN
-AGN-A
-AGO
-AGO-B
-AGO-E
-AGO-F
-AGR
-AGRO
-AGU
-AGX
-AHC
-AHH
-AHL
-AHL-A
-AHL-B
-AHL-C
-AHL-D
-AHP
-AHP-B
-AHS
-AHT
-AHT-A
-AHT-D
-AHT-F
-AHT-G
-AI
-AIB
-AIC
-AIF
-AIG
-AIG.W
-AIN
-AIR
-AIT
-AIV
-AIV-A
-AIW
-AIY
-AIZ
-AJG
-AJRD
-AJX
-AKO.A
-AKO.B
-AKP
-AKR
-AKS
-AL
-ALB
-ALDW
-ALE
-ALEX
-ALG
-ALJ
-ALK
-ALL
-ALL-A
-ALL-B
-ALL-C
-ALL-D
-ALL-E
-ALL-F
-ALL-Y
-ALLE
-ALLY
-ALP-O
-ALR
-ALR-B
-ALSN
-ALV
-ALX
-AM
-AMBR
-AMC
-AME
-AMFW
-AMG
-AMH
-AMH-A
-AMH-B
-AMH-C
-AMH-D
-AMH-E
-AMID
-AMN
-AMP
-AMRC
-AMT
-AMT-A
-AMT-B
-AMX
-AN
-ANET
-ANF
-ANFI
-ANH
-ANH-A
-ANH-B
-ANH-C
-ANTM
-ANTX
-ANW
-AOD
-AOI
-AON
-AOS
-AP
-APA
-APAM
-APB
-APC
-APD
-APF
-APFH
-APH
-APLE
-APO
-APTS
-APU
-AR
-ARA
-ARC
-ARCH
-ARCO
-ARCX
-ARDC
-ARE
-ARE-A
-ARE-D
-ARE-E
-ARES
-ARH-C
-ARI
-ARI-A
-ARI-C
-ARL
-ARMK
-ARN-B
-ARNC
-AROC
-ARR
-ARR-A
-ARR-B
-ARU
-ARW
-ASA
-ASB
-ASB-C
-ASB-D
-ASC
-ASG
-ASGN
-ASH
-ASIX
-ASPN
-ASR
-ASX
-AT
-ATEN
-ATHM
-ATI
-ATKR
-ATO
-ATR
-ATTO
-ATU
-ATV
-ATW
-AU
-AUO
-AUY
-AV
-AVA
-AVAL
-AVB
-AVD
-AVG
-AVH
-AVK
-AVP
-AVT
-AVV
-AVX
-AVY
-AWF
-AWH
-AWI
-AWK
-AWP
-AWR
-AXE
-AXL
-AXON
-AXP
-AXR
-AXS
-AXS-C
-AXS-D
-AXTA
-AYI
-AYR
-AZN
-AZO
-AZRE
-AZZ
-B
-BA
-BABA
-BAC
-BAC-A
-BAC-C
-BAC-D
-BAC-E
-BAC-I
-BAC-L
-BAC-W
-BAC-Y
-BAC.A
-BAC.B
-BAF
-BAH
-BAK
-BAM
-BAN-C
-BAN-D
-BAN-E
-BANC
-BAP
-BAS
-BAX
-BBD
-BBDO
-BBF
-BBG
-BBK
-BBL
-BBN
-BBT
-BBT-D
-BBT-E
-BBT-F
-BBT-G
-BBT-H
-BBU
-BBVA
-BBW
-BBX
-BBY
-BC
-BCC
-BCE
-BCEI
-BCH
-BCO
-BCR
-BCRH
-BCS
-BCS-A
-BCS-D
-BCX
-BDC
-BDC-B
-BDJ
-BDN
-BDN-E
-BDX
-BEL
-BEN
-BEP
-BERY
-BETR
-BF.A
-BF.B
-BFAM
-BFK
-BFO
-BFR
-BFS
-BFS-C
-BFZ
-BG
-BGB
-BGC
-BGCA
-BGE-B
-BGG
-BGH
-BGR
-BGS
-BGT
-BGX
-BGY
-BH
-BHE
-BHI
-BHK
-BHL
-BHLB
-BHP
-BID
-BIF
-BIG
-BIO
-BIO.B
-BIO.W
-BIOA
-BIP
-BIT
-BITA
-BJZ
-BK
-BK-C
-BKD
-BKE
-BKFS
-BKH
-BKHU
-BKK
-BKN
-BKS
-BKT
-BKU
-BLD
-BLH
-BLK
-BLL
-BLOX
-BLW
-BLX
-BMA
-BME
-BMI
-BML-G
-BML-H
-BML-I
-BML-J
-BML-L
-BMO
-BMS
-BMY
-BNED
-BNJ
-BNS
-BNY
-BOE
-BOH
-BOI
-BOOT
-BORN
-BOX
-BOXC
-BP
-BPI
-BPK
-BPL
-BPT
-BPY
-BQH
-BR
-BRC
-BRFS
-BRK.A
-BRK.B
-BRO
-BRS
-BRSS
-BRT
-BRX
-BSAC
-BSBR
-BSD
-BSE
-BSL
-BSM
-BSMX
-BST
-BSX
-BT
-BTA
-BTE
-BTO
-BTT
-BTZ
-BUD
-BUI
-BURL
-BVN
-BW
-BWA
-BWG
-BWP
-BWXT
-BX
-BXC
-BXE
-BXMT
-BXMX
-BXP
-BXP-B
-BXS
-BYD
-BYM
-BZH
-C
-C-C
-C-J
-C-K
-C-L
-C-N
-C-P
-C-S
-C.A
-CAA
-CAB
-CABO
-CACI
-CAE
-CAF
-CAG
-CAH
-CAI
-CAJ
-CAL
-CALX
-CAPL
-CAS
-CAT
-CATO
-CB
-CBA
-CBB
-CBB-B
-CBD
-CBG
-CBI
-CBK
-CBL
-CBL-D
-CBL-E
-CBM
-CBO
-CBPX
-CBR
-CBS
-CBS.A
-CBT
-CBU
-CBX
-CBZ
-CC
-CCC
-CCE
-CCI
-CCI-A
-CCJ
-CCK
-CCL
-CCM
-CCO
-CCP
-CCS
-CCU
-CCV
-CCZ
-CDE
-CDI
-CDR
-CDR-B
-CE
-CEA
-CEB
-CEE
-CEL
-CELP
-CEM
-CEN
-CEO
-CEQP
-CF
-CFC-B
-CFG
-CFI
-CFR
-CFR-A
-CFX
-CGA
-CGG
-CGI
-CHA
-CHCT
-CHD
-CHE
-CHGG
-CHH
-CHK
-CHK-D
-CHKR
-CHL
-CHMI
-CHMT
-CHN
-CHS
-CHS-A
-CHSP
-CHT
-CHU
-CI
-CIA
-CIB
-CIE
-CIEN
-CIF
-CIG
-CIG.C
-CII
-CIM
-CIM-A
-CINR
-CIO
-CIO-A
-CIR
-CIT
-CIVI
-CKH
-CL
-CLA
-CLB
-CLC
-CLD
-CLDT
-CLF
-CLGX
-CLH
-CLI
-CLN-A
-CLN-B
-CLN-C
-CLNY
-CLR
-CLS
-CLW
-CLX
-CM
-CMA
-CMA.W
-CMC
-CMCM
-CMG
-CMI
-CMN
-CMO
-CMO-E
-CMP
-CMR-B
-CMR-C
-CMR-D
-CMRE
-CMS
-CMS-B
-CMU
-CNA
-CNC
-CNCO
-CNHI
-CNI
-CNK
-CNNX
-CNO
-CNP
-CNQ
-CNS
-CNX
-CNXC
-CO
-CODI
-COE
-COF
-COF-C
-COF-D
-COF-F
-COF-G
-COF-P
-COF.W
-COG
-COH
-COL
-COO
-COP
-COR
-COR-A
-COR-Z
-CORR
-COT
-COTV
-COTY
-CP
-CPA
-CPAC
-CPB
-CPE
-CPE-A
-CPF
-CPG
-CPK
-CPL
-CPN
-CPPL
-CPS
-CPT
-CR
-CRC
-CRCM
-CRD.A
-CRD.B
-CRH
-CRI
-CRK
-CRL
-CRM
-CRR
-CRS
-CRT
-CRY
-CS
-CSC
-CSI
-CSL
-CSLT
-CSRA
-CSS
-CST
-CSTM
-CSU
-CSV
-CTAA
-CTB
-CTBB
-CTL
-CTLT
-CTR
-CTS
-CTT
-CTU
-CTV
-CTW
-CTX
-CTY
-CTZ
-CUB
-CUB-A
-CUB-C
-CUB-D
-CUB-E
-CUB-F
-CUBE
-CUBI
-CUBS
-CUDA
-CUK
-CUZ
-CVA
-CVB
-CVE
-CVEO
-CVG
-CVI
-CVO
-CVRR
-CVS
-CVT
-CVX
-CW
-CWEI
-CWH
-CWT
-CX
-CXE
-CXH
-CXO
-CXP
-CXW
-CYD
-CYH
-CYS
-CYS-A
-CYS-B
-CZZ
-D
-DAC
-DAL
-DAN
-DAR
-DATA
-DB
-DBD
-DBL
-DCA
-DCI
-DCM
-DCO
-DCT
-DCUC
-DCUD
-DD
-DD-A
-DD-B
-DDC
-DDD
-DDE
-DDF
-DDR
-DDR-J
-DDR-K
-DDS
-DDT
-DE
-DEA
-DECK
-DEI
-DEL
-DEO
-DEX
-DF
-DFIN
-DFP
-DFS
-DFS-B
-DFT
-DFT-C
-DG
-DGI
-DGX
-DHF
-DHG
-DHI
-DHR
-DHT
-DHX
-DIAX
-DIN
-DIS
-DK
-DKL
-DKS
-DKT
-DL
-DLB
-DLN-A
-DLNG
-DLPH
-DLR
-DLR-F
-DLR-G
-DLR-H
-DLR-I
-DLX
-DM
-DMB
-DMD
-DMO
-DNB
-DNI
-DNOW
-DNP
-DNR
-DO
-DOC
-DOOR
-DOV
-DOW
-DPG
-DPLO
-DPM
-DPS
-DPZ
-DQ
-DRA
-DRD
-DRE
-DRH
-DRI
-DRQ
-DRUA
-DSE
-DSL
-DSM
-DST
-DSU
-DSW
-DSX
-DSX-B
-DSXN
-DTE
-DTF
-DTJ
-DTK
-DTL.P
-DTQ
-DTV
-DTZ
-DUC
-DUK
-DUKH
-DV
-DVA
-DVD
-DVMT
-DVN
-DW
-DX
-DX-A
-DX-B
-DXB
-DY
-DYN
-DYN-A
-DYN.W
-DYNC
-E
-EAB
-EAE
-EAI
-EARN
-EAT
-EBF
-EBR
-EBR.B
-EBS
-EC
-ECA
-ECC
-ECCA
-ECCB
-ECCZ
-ECL
-ECOM
-ECR
-ECT
-ED
-EDD
-EDE
-EDF
-EDI
-EDN
-EDR
-EDU
-EE
-EEA
-EEP
-EEQ
-EFC
-EFF
-EFR
-EFT
-EFX
-EGF
-EGIF
-EGL
-EGN
-EGO
-EGP
-EGY
-EHI
-EHIC
-EHT
-EIG
-EIX
-EL
-ELC
-ELF
-ELJ
-ELLI
-ELP
-ELS
-ELS-C
-ELU
-ELY
-EMD
-EME
-EMES
-EMF
-EMG
-EMN
-EMO
-EMP
-EMR
-ENB
-ENBL
-ENH
-ENH-C
-ENIA
-ENIC
-ENJ
-ENLC
-ENLK
-ENO
-ENR
-ENS
-ENV
-ENVA
-ENZ
-EOCA
-EOCC
-EOD
-EOG
-EOI
-EOS
-EOT
-EP-C
-EPAM
-EPC
-EPD
-EPE
-EPR
-EPR-C
-EPR-E
-EPR-F
-EQC
-EQC-D
-EQCO
-EQGP
-EQM
-EQR
-EQS
-EQT
-EQY
-ERA
-ERF
-ERJ
-EROS
-ES
-ESD
-ESE
-ESL
-ESNT
-ESRT
-ESS
-ESV
-ETB
-ETE
-ETG
-ETH
-ETJ
-ETM
-ETN
-ETO
-ETP
-ETR
-ETV
-ETW
-ETX
-ETY
-EURN
-EV
-EVA
-EVC
-EVDY
-EVE-A
-EVER
-EVF
-EVG
-EVGN
-EVH
-EVHC
-EVN
-EVR
-EVRI
-EVT
-EVTC
-EW
-EXAR
-EXC
-EXCU
-EXD
-EXG
-EXK
-EXP
-EXPR
-EXR
-EXTN
-EZT
-F
-FAC
-FAF
-FAM
-FBC
-FBHS
-FBK
-FBP
-FBR
-FC
-FCAM
-FCAU
-FCB
-FCE.A
-FCE.B
-FCF
-FCFS
-FCH
-FCH-A
-FCN
-FCPT
-FCT
-FCX
-FDC
-FDEU
-FDP
-FDS
-FDX
-FE
-FEI
-FELP
-FENG
-FEO
-FET
-FF
-FFA
-FFC
-FFG
-FGB
-FGL
-FGP
-FHN
-FHN-A
-FHY
-FI
-FICO
-FIF
-FIG
-FII
-FIS
-FIT
-FIX
-FL
-FLC
-FLO
-FLOW
-FLR
-FLS
-FLT
-FLTX
-FLY
-FMC
-FMN
-FMO
-FMS
-FMSA
-FMX
-FMY
-FN
-FNB
-FNB-E
-FNF
-FNFV
-FNV
-FOE
-FOF
-FOR
-FPF
-FPI
-FPL
-FPO
-FPT
-FR
-FRA
-FRC
-FRC-A
-FRC-B
-FRC-C
-FRC-D
-FRC-E
-FRC-F
-FRC-G
-FRO
-FRT
-FSB
-FSCE
-FSD
-FSIC
-FSM
-FSS
-FT
-FTAI
-FTI
-FTK
-FTS
-FTV
-FUL
-FUN
-G
-GAB
-GAB-D
-GAB-G
-GAB-H
-GAB-J
-GAM
-GAM-B
-GATX
-GBAB
-GBL
-GBX
-GCAP
-GCH
-GCI
-GCO
-GCP
-GCV
-GCV-B
-GD
-GDDY
-GDL
-GDL-B
-GDO
-GDOT
-GDV
-GDV-A
-GDV-D
-GDV-G
-GE
-GEB
-GEF
-GEF.B
-GEH
-GEK
-GEL
-GEN
-GEO
-GEQ
-GER
-GES
-GF
-GFA
-GFF
-GFI
-GFY
-GG
-GGB
-GGE
-GGG
-GGM
-GGP
-GGP-A
-GGT
-GGT-B
-GGZ
-GGZ-A
-GHC
-GHL
-GHM
-GHY
-GI
-GIB
-GIL
-GIM
-GIMO
-GIS
-GJH
-GJO
-GJP
-GJR
-GJS
-GJT
-GJV
-GKOS
-GLF
-GLO-A
-GLOB
-GLOG
-GLOP
-GLP
-GLT
-GLW
-GM
-GM.B
-GME
-GMED
-GMRE
-GMS
-GMTA
-GMZ
-GNC
-GNE
-GNE-A
-GNK
-GNL
-GNRC
-GNRT
-GNT
-GNW
-GOF
-GOL
-GOLF
-GPC
-GPE-A
-GPI
-GPK
-GPM
-GPN
-GPRK
-GPS
-GPT
-GPT-A
-GPX
-GRA
-GRAM
-GRO
-GRP.U
-GRR
-GRUB
-GRX
-GRX-A
-GRX-B
-GS
-GS-A
-GS-B
-GS-C
-GS-D
-GS-I
-GS-J
-GS-K
-GS-N
-GSBD
-GSH
-GSJ
-GSK
-GSL
-GSL-B
-GTN
-GTN.A
-GTS
-GTT
-GTY
-GUT
-GUT-A
-GUT-C
-GVA
-GWB
-GWR
-GWRE
-GWW
-GXP
-GXP-B
-GYB
-GYC
-GZT
-H
-HAE
-HAL
-HAR
-HASI
-HBI
-HBM
-HBM.W
-HCA
-HCI
-HCJ
-HCLP
-HCN
-HCN-I
-HCN-J
-HCP
-HD
-HDB
-HE
-HE-U
-HEI
-HEI.A
-HEP
-HEQ
-HES
-HES-A
-HF
-HFC
-HGG
-HGH
-HGT
-HHC
-HHS
-HHY
-HI
-HIE
-HIFR
-HIG
-HIG.W
-HII
-HIL
-HIO
-HIVE
-HIW
-HIX
-HJV
-HK
-HL
-HL-B
-HLF
-HLI
-HLS
-HLS.W
-HLT
-HLX
-HMC
-HMLP
-HMN
-HMY
-HNI
-HNP
-HNR
-HOG
-HOME
-HON
-HOS
-HOV
-HP
-HPE
-HPF
-HPI
-HPP
-HPQ
-HPS
-HQH
-HQL
-HR
-HRB
-HRC
-HRG
-HRI
-HRL
-HRS
-HRTG
-HSB-A
-HSBC
-HSC
-HSEA
-HSEB
-HST
-HSY
-HT
-HT-C
-HT-D
-HT-E
-HTA
-HTD
-HTF
-HTGC
-HTGX
-HTGY
-HTGZ
-HTH
-HTR
-HTY
-HTZ
-HUBB
-HUBS
-HUM
-HUN
-HVT
-HVT.A
-HW
-HXL
-HY
-HYB
-HYH
-HYI
-HYT
-HZN
-HZO
-I
-IAE
-IAG
-IBA
-IBM
-IBN
-IBP
-ICB
-ICD
-ICE
-ICL
-IDA
-IDE
-IDT
-IEX
-IFF
-IFN
-IGA
-IGD
-IGI
-IGR
-IGT
-IHC
-IHD
-IHG
-IID
-IIF
-IIM
-IL
-IM
-IMAX
-IMN
-IMPV
-INB
-INF
-INFY
-ING
-INGR
-INN
-INN-A
-INN-B
-INN-C
-INN-D
-INST
-INT
-INVN
-INXN
-INZ
-IO
-IOC
-IP
-IPG
-IPHI
-IPI
-IPL-D
-IQI
-IR
-IRE-B
-IRE.P
-IRET
-IRL
-IRM
-IRR
-IRS
-ISD
-ISF
-ISG
-ISP
-IT
-ITCB
-ITG
-ITGR
-ITT
-ITUB
-ITW
-IVC
-IVH
-IVR
-IVR-A
-IVR-B
-IVZ
-IX
-JAX
-JBK
-JBL
-JBN
-JBR
-JBT
-JCAP
-JCE
-JCI
-JCI.P
-JCP
-JDD
-JE
-JEC
-JEQ
-JFC
-JFR
-JGH
-JHA
-JHB
-JHD
-JHI
-JHS
-JHX
-JHY
-JKS
-JLL
-JLS
-JMEI
-JMF
-JMLP
-JMM
-JMP
-JMPB
-JMPC
-JMT
-JNJ
-JNPR
-JNS
-JOE
-JOF
-JONE
-JOY
-JP
-JPC
-JPEP
-JPI
-JPM
-JPM-A
-JPM-B
-JPM-D
-JPM-E
-JPM-F
-JPM-G
-JPM-H
-JPM.W
-JPS
-JPW
-JQC
-JRI
-JRO
-JRS
-JSD
-JTA
-JTD
-JW.A
-JW.B
-JWN
-K
-KAI
-KAMN
-KAP
-KAR
-KATE
-KB
-KBH
-KBR
-KCC
-KCG
-KDMN
-KED
-KEF
-KEM
-KEN
-KEP
-KEX
-KEY
-KEY-G
-KEY-H
-KEYS
-KF
-KFH
-KFI
-KFN.
-P
-KFS
-KFY
-KGC
-KHI
-KIM
-KIM-I
-KIM-J
-KIM-K
-KIO
-KKR
-KKR-A
-KKR-B
-KMB
-KMF
-KMG
-KMI
-KMI-A
-KMI.W
-KMM
-KMPA
-KMPR
-KMT
-KMX
-KN
-KND
-KNL
-KNOP
-KNX
-KO
-KOD.W
-KOD.X
-KODK
-KOF
-KOP
-KORS
-KOS
-KR
-KRA
-KRC
-KRC-G
-KRC-H
-KRG
-KRO
-KS
-KSM
-KSS
-KST
-KSU
-KSU.P
-KT
-KTF
-KTH
-KTN
-KTP
-KW
-KWN
-KWR
-KYE
-KYN
-KYN-F
-KYO
-L
-LAD
-LADR
-LAZ
-LB
-LBF
-LC
-LCI
-LCM
-LDF
-LDL
-LDOS
-LDP
-LDR
-LEA
-LEE
-LEG
-LEJU
-LEN
-LEN.B
-LEO
-LFC
-LFGR
-LFL
-LGF
-LGI
-LH
-LHO
-LHO-H
-LHO-I
-LHO-J
-LII
-LITB
-LKSD
-LL
-LLL
-LLY
-LM
-LMHA
-LMHB
-LMT
-LN
-LNC
-LNC.W
-LND
-LNKD
-LNN
-LNT
-LOCK
-LOR
-LOW
-LPG
-LPI
-LPL
-LPT
-LPX
-LQ
-LRN
-LSI
-LTC
-LUB
-LUK
-LUV
-LUX
-LVLT
-LVS
-LW
-LXFR
-LXFT
-LXK
-LXP
-LXP-C
-LXU
-LYB
-LYG
-LYV
-LZB
-M
-MA
-MAA
-MAC
-MAIN
-MAN
-MANU
-MAS
-MATX
-MAV
-MBI
-MBLY
-MBT
-MC
-MCA
-MCC
-MCD
-MCI
-MCK
-MCN
-MCO
-MCQ
-MCR
-MCRN
-MCS
-MCV
-MCX
-MCY
-MD
-MDC
-MDLX
-MDLY
-MDP
-MDR
-MDT
-MDU
-MED
-MEG
-MEI
-MEN
-MEP
-MER-K
-MER-P
-MET
-MET-A
-MFA
-MFA-B
-MFC
-MFCB
-MFD
-MFG
-MFL
-MFM
-MFO
-MFS
-MFT
-MFV
-MG
-MGA
-MGF
-MGM
-MGP
-MGR
-MGU
-MH-A
-MH-C
-MHD
-MHF
-MHG
-MHI
-MHK
-MHLA
-MHN
-MHNB
-MHNC
-MHO
-MHO-A
-MIC
-MIE
-MIN
-MIT-A
-MIT-B
-MITT
-MIXT
-MIY
-MJN
-MKC
-MKC.V
-MKL
-MLI
-MLM
-MLP
-MLR
-MMC
-MMD
-MMI
-MMM
-MMP
-MMS
-MMT
-MMU
-MN
-MNE
-MNI
-MNK
-MNP
-MNR
-MNR-B
-MNR-C
-MO
-MOD
-MODN
-MOG.A
-MOG.B
-MOH
-MON
-MORE
-MOS
-MOV
-MP-D
-MPA
-MPC
-MPG
-MPLX
-MPSX
-MPV
-MPW
-MPX
-MQT
-MQY
-MRC
-MRIN
-MRK
-MRO
-MRT
-MS
-MS-A
-MS-E
-MS-F
-MS-G
-MS-I
-MSA
-MSB
-MSCA
-MSCI
-MSD
-MSF
-MSG
-MSGN
-MSI
-MSL
-MSM
-MSP
-MT
-MTB
-MTB-C
-MTB.P
-MTB.W
-MTD
-MTDR
-MTG
-MTH
-MTL
-MTL.P
-MTN
-MTOR
-MTR
-MTRN
-MTT
-MTU
-MTW
-MTX
-MTZ
-MUA
-MUC
-MUE
-MUH
-MUI
-MUJ
-MUR
-MUS
-MUSA
-MUX
-MVC
-MVCB
-MVO
-MVT
-MWA
-MWW
-MX
-MXE
-MXF
-MXL
-MYC
-MYCC
-MYD
-MYE
-MYF
-MYI
-MYJ
-MYN
-MYOV
-MZF
-N
-NAC
-NAD
-NADL
-NAN
-NAO
-NAP
-NAT
-NAV
-NAV-D
-NAZ
-NBB
-NBD
-NBHC
-NBL
-NBLX
-NBR
-NC
-NCA
-NCB
-NCI
-NCR
-NCS
-NCT
-NCT-B
-NCT-C
-NCT-D
-NCV
-NCZ
-NDP
-NDRO
-NE
-NEA
-NEE
-NEE-C
-NEE-G
-NEE-H
-NEE-I
-NEE-J
-NEE-K
-NEE-Q
-NEE-R
-NEFF
-NEM
-NEP
-NEU
-NEV
-NEWM
-NEWR
-NFG
-NFJ
-NFX
-NGG
-NGL
-NGL-A
-NGS
-NGVC
-NGVT
-NHA
-NHF
-NHI
-NI
-NID
-NIE
-NIM
-NIQ
-NJR
-NKE
-NKG
-NKX
-NL
-NLS
-NLSN
-NLY
-NLY-A
-NLY-C
-NLY-D
-NLY-E
-NM
-NM-G
-NM-H
-NMBL
-NMFC
-NMI
-NMK-B
-NMK-C
-NMM
-NMR
-NMS
-NMT
-NMY
-NMZ
-NNA
-NNC
-NNI
-NNN
-NNN-D
-NNN-E
-NNN-F
-NNY
-NOA
-NOAH
-NOC
-NOK
-NOM
-NOMD
-NORD
-NOV
-NOW
-NP
-NPK
-NPO
-NPTN
-NPV
-NQ
-NQP
-NR
-NRE
-NRF
-NRF-A
-NRF-B
-NRF-C
-NRF-D
-NRF-E
-NRG
-NRK
-NRP
-NRT
-NRZ
-NS
-NSA
-NSAM
-NSC
-NSH
-NSL
-NSM
-NSP
-NSR
-NSS
-NTB
-NTC
-NTG
-NTL
-NTP
-NTT
-NTX
-NTZ
-NUE
-NUM
-NUO
-NUS
-NUV
-NUW
-NVG
-NVGS
-NVO
-NVR
-NVRO
-NVS
-NVTA
-NW-C
-NWE
-NWHM
-NWL
-NWN
-NWY
-NX
-NXC
-NXJ
-NXN
-NXP
-NXQ
-NXR
-NXRT
-NYC-U
-NYCB
-NYL.A
-NYLD
-NYRT
-NYT
-NYV
-NZF
-O
-O-F
-OA
-OAK
-OAK-A
-OAKS
-OAS
-OB
-OC
-OCIP
-OCN
-ODC
-OEC
-OFC
-OFC-L
-OFG
-OFG-A
-OFG-B
-OFG-D
-OGE
-OGS
-OHI
-OI
-OIA
-OIB.C
-OII
-OIS
-OKE
-OKS
-OLN
-OLP
-OMAA
-OMAM
-OMC
-OME
-OMF
-OMI
-OMN
-ONDK
-OOMA
-OPP
-OPY
-OR
-ORA
-ORAN
-ORC
-ORCL
-ORI
-ORN
-OSB
-OSG
-OSK
-OUT
-OXM
-OXY
-OZM
-P
-PAA
-PAC
-PACD
-PAG
-PAGP
-PAH
-PAI
-PAM
-PANW
-PAR
-PAY
-PAYC
-PB
-PBA
-PBB
-PBF
-PBFX
-PBH
-PBI
-PBI-B
-PBR
-PBR.A
-PBT
-PBYI
-PCF
-PCG
-PCI
-PCK
-PCM
-PCN
-PCQ
-PDI
-PDM
-PDS
-PDT
-PE
-PEB
-PEB-C
-PEB-D
-PEG
-PEI
-PEI-A
-PEI-B
-PEN
-PEO
-PEP
-PER
-PES
-PF
-PFD
-PFE
-PFG
-PFGC
-PFH
-PFK
-PFL
-PFN
-PFO
-PFS
-PFSI
-PG
-PGEM
-PGH
-PGP
-PGR
-PGRE
-PGZ
-PH
-PHD
-PHG
-PHH
-PHI
-PHK
-PHM
-PHT
-PHX
-PII
-PIM
-PIR
-PIY
-PJC
-PJH
-PJT
-PKD
-PKE
-PKG
-PKI
-PKO
-PKX
-PKY
-PL-C
-PL-E
-PLD
-PLNT
-PLOW
-PLT
-PM
-PMC
-PMF
-PML
-PMM
-PMO
-PMT
-PMX
-PN
-PNC
-PNC-P
-PNC-Q
-PNC.W
-PNF
-PNI
-PNM
-PNR
-PNTA
-PNW
-POL
-POR
-POST
-POT
-PPG
-PPL
-PPP
-PPR
-PPS
-PPS-A
-PPT
-PPX
-PQ
-PRA
-PRE-D
-PRE-E
-PRE-F
-PRE-G
-PRE-H
-PRE-I
-PRGO
-PRH
-PRI
-PRLB
-PRO
-PRTY
-PRU
-PSA
-PSA-A
-PSA-B
-PSA-C
-PSA-D
-PSA-E
-PSA-S
-PSA-T
-PSA-U
-PSA-V
-PSA-W
-PSA-X
-PSA-Y
-PSA-Z
-PSB
-PSB-S
-PSB-T
-PSB-U
-PSB-V
-PSB-W
-PSF
-PSG
-PSO
-PSTG
-PSX
-PSXP
-PTHN
-PTR
-PTY
-PUK
-PUK-A
-PUK.P
-PVG
-PVH
-PVTD
-PWE
-PWR
-PX
-PXD
-PYN
-PYS
-PYT
-PZC
-PZE
-PZN
-Q
-QCP
-QEP
-QHC
-QSR
-QTM
-QTS
-QTWO
-QUAD
-QUOT
-R
-RACE
-RAD
-RAI
-RAS
-RAS-A
-RAS-B
-RAS-C
-RATE
-RAX
-RBA
-RBC
-RBS
-RBS-F
-RBS-H
-RBS-L
-RBS-S
-RCI
-RCL
-RCS
-RDC
-RDN
-RDS.A
-RDS.B
-RDY
-RE
-REG
-REG-F
-REG-G
-RELX
-REN
-RENN
-RENX
-RES
-RESI
-REV
-REX
-REX-A
-REXR
-RF
-RF-A
-RF-B
-RFI
-RFP
-RFT
-RFTA
-RGA
-RGC
-RGR
-RGS
-RGT
-RH
-RHI
-RHP
-RHT
-RICE
-RIG
-RIGP
-RIO
-RIV
-RJD
-RJF
-RL
-RLGY
-RLH
-RLI
-RLJ
-RM
-RMAX
-RMD
-RMP
-RMT
-RNG
-RNP
-RNR
-RNR-C
-RNR-E
-ROG
-ROK
-ROL
-ROP
-ROYT
-RPA-A
-RPAI
-RPM
-RPT
-RPT-D
-RQI
-RRC
-RRD
-RRTS
-RS
-RSG
-RSO
-RSO-A
-RSO-B
-RSO-C
-RSPP
-RST
-RT
-RTEC
-RTN
-RUBI
-RVT
-RWT
-RXN
-RY
-RY-S
-RY-T
-RYA-A
-RYAM
-RYI
-RYN
-RZA
-RZB
-S
-SA
-SAH
-SAIC
-SALT
-SAM
-SAN
-SAN-A
-SAN-B
-SAN-C
-SAN-I
-SAP
-SAQ
-SAR
-SB
-SB-B
-SB-C
-SB-D
-SBGL
-SBH
-SBNA
-SBNB
-SBR
-SBS
-SBW
-SBY
-SC
-SCCO
-SCD
-SCE-F
-SCE-G
-SCE-H
-SCE-J
-SCE-K
-SCG
-SCH-B
-SCH-C
-SCH-D
-SCHW
-SCI
-SCL
-SCM
-SCNB
-SCQ
-SCS
-SCX
-SD
-SDLP
-SDR
-SDRL
-SDT
-SE
-SEAS
-SEE
-SEM
-SEMG
-SEP
-SERV
-SF
-SF-A
-SFE
-SFL
-SFR
-SFS
-SFUN
-SGF
-SGM
-SGU
-SGY
-SGZA
-SHAK
-SHG
-SHI
-SHLX
-SHO
-SHO-E
-SHO-F
-SHOP
-SHW
-SID
-SIG
-SITE
-SIX
-SJI
-SJM
-SJR
-SJT
-SJW
-SKM
-SKT
-SKX
-SLB
-SLCA
-SLD
-SLF
-SLG
-SLG-I
-SLRA
-SLTB
-SLW
-SM
-SMFG
-SMG
-SMI
-SMLP
-SMM
-SMP
-SN
-SNA
-SNE
-SNN
-SNOW
-SNP
-SNR
-SNV
-SNV-C
-SNX
-SNY
-SO
-SOJA
-SOJB
-SOL
-SON
-SOR
-SOV-C
-SPA
-SPB
-SPE
-SPE-B
-SPG
-SPG-J
-SPGI
-SPH
-SPLP
-SPN
-SPR
-SPXC
-SPXX
-SQ
-SQM
-SQNS
-SR
-SRC
-SRE
-SRF
-SRG
-SRI
-SRLP
-SRT
-SRV
-SSD
-SSI
-SSL
-SSNI
-SSP
-SSTK
-SSW
-SSW-D
-SSW-E
-SSW-G
-SSW-H
-SSWN
-ST
-STA-B
-STA-C
-STA-D
-STA-E
-STA-F
-STA-G
-STA-I
-STAG
-STAR
-STAY
-STC
-STE
-STI
-STI-A
-STI-E
-STI.A
-STI.B
-STJ
-STK
-STL
-STM
-STN
-STNG
-STO
-STON
-STOR
-STT
-STT-C
-STT-D
-STT-E
-STT-G
-STV
-STWD
-STZ
-STZ.B
-SU
-SUI
-SUI-A
-SUM
-SUN
-SUP
-SUPV
-SVU
-SWC
-SWFT
-SWH
-SWJ
-SWK
-SWM
-SWN
-SWNC
-SWX
-SWZ
-SXC
-SXCP
-SXE
-SXI
-SXL
-SXT
-SYF
-SYK
-SYT
-SYX
-SYY
-SZC
-T
-TAC
-TAHO
-TAP
-TAP.A
-TARO
-TBI
-TCAP
-TCB
-TCB-B
-TCB-C
-TCB.W
-TCCA
-TCCB
-TCI
-TCK
-TCO
-TCO-J
-TCO-K
-TCP
-TCPI
-TCRX
-TCRZ
-TCS
-TD
-TDA
-TDC
-TDE
-TDF
-TDG
-TDI
-TDJ
-TDOC
-TDS
-TDW
-TDY
-TEF
-TEGP
-TEI
-TEL
-TEN
-TEO
-TEP
-TER
-TEVA
-TEX
-TFX
-TG
-TGH
-TGI
-TGNA
-TGP
-TGS
-TGT
-THC
-THG
-THGA
-THO
-THQ
-THR
-THS
-THW
-TI
-TI.A
-TIER
-TIF
-TIME
-TISI
-TJX
-TK
-TKC
-TKF
-TKR
-TLI
-TLK
-TLLP
-TLN
-TLP
-TLRD
-TLYS
-TM
-TMH
-TMHC
-TMK
-TMK-B
-TMK-C
-TMO
-TMST
-TNC
-TNET
-TNH
-TNK
-TNP
-TNP-B
-TNP-C
-TNP-D
-TOL
-TOO
-TOO-A
-TOO-B
-TOT
-TOWR
-TPB
-TPC
-TPH
-TPL
-TPRE
-TPVG
-TPVZ
-TPX
-TPZ
-TR
-TRC
-TRCO
-TREC
-TREX
-TRGP
-TRI
-TRK
-TRMR
-TRN
-TRN-A
-TRNO
-TROX
-TRP
-TRQ
-TRR
-TRTN
-TRU
-TRV
-TS
-TSE
-TSI
-TSL
-TSLF
-TSLX
-TSM
-TSN
-TSNU
-TSO
-TSQ
-TSS
-TSU
-TTC
-TTF
-TTI
-TTM
-TTP
-TU
-TUP
-TV
-TVC
-TVE
-TVPT
-TWI
-TWLO
-TWN
-TWO
-TWTR
-TWX
-TX
-TXT
-TY
-TY.P
-TYG
-TYL
-UA
-UA.C
-UAL
-UAM
-UAN
-UBA
-UBP
-UBP-F
-UBP-G
-UBS
-UCP
-UDR
-UE
-UFI
-UFS
-UGI
-UGP
-UHS
-UHT
-UIS
-UL
-UMC
-UMH
-UMH-A
-UMH-B
-UN
-UNF
-UNH
-UNM
-UNP
-UNT
-UNVR
-UPS
-URI
-USA
-USAC
-USB
-USB-A
-USB-H
-USB-M
-USB-N
-USB-O
-USDP
-USFD
-USG
-USM
-USNA
-USPH
-UTF
-UTI
-UTL
-UTX
-UVE
-UVV
-UZA
-UZB
-UZC
-V
-VAC
-VAL
-VAL.P
-VALE
-VAR
-VBF
-VC
-VCO
-VCRA
-VCV
-VEC
-VEDL
-VEEV
-VER
-VER-F
-VET
-VFC
-VG
-VGI
-VGM
-VGR
-VHI
-VIPS
-VIV
-VJET
-VKQ
-VLO
-VLP
-VLRS
-VLT
-VLY
-VLY-A
-VLY.W
-VMC
-VMEM
-VMI
-VMO
-VMW
-VNCE
-VNO
-VNO-G
-VNO-I
-VNO-K
-VNO-L
-VNTV
-VOC
-VOYA
-VPG
-VPV
-VR
-VR-A
-VRS
-VRTV
-VRX
-VSH
-VSI
-VSLR
-VSM
-VSTO
-VTA
-VTN
-VTR
-VTRB
-VTTI
-VVC
-VVI
-VVR
-VVV
-VZ
-VZA
-W
-WAAS
-WAB
-WAC
-WAGE
-WAIR
-WAL
-WALA
-WAT
-WBAI
-WBC
-WBK
-WBS
-WBS-E
-WCC
-WCG
-WCIC
-WCN
-WD
-WDAY
-WDR
-WEA
-WEC
-WES
-WEX
-WF
-WFC
-WFC-J
-WFC-L
-WFC-N
-WFC-O
-WFC-P
-WFC-Q
-WFC-R
-WFC-T
-WFC-V
-WFC-W
-WFC-X
-WFC.W
-WFE-A
-WFT
-WG
-WGL
-WGO
-WGP
-WHG
-WHR
-WIA
-WIT
-WIW
-WK
-WLH
-WLK
-WLKP
-WLL
-WM
-WMB
-WMC
-WMK
-WMLP
-WMS
-WMT
-WNC
-WNR
-WNRL
-WNS
-WOR
-WPC
-WPG
-WPG-H
-WPG-I
-WPT
-WPX
-WPXP
-WPZ
-WR
-WRB
-WRB-B
-WRB-C
-WRB-D
-WRE
-WRI
-WRK
-WSM
-WSO
-WSO.B
-WSR
-WST
-WTI
-WTM
-WTR
-WTS
-WTW
-WU
-WUBA
-WWAV
-WWE
-WWW
-WY
-WYN
-X
-XCO
-XEC
-XEL
-XHR
-XIN
-XKE
-XL
-XNY
-XOM
-XON
-XOXO
-XPO
-XRM
-XRS
-XRX
-XTLY
-XYL
-Y
-YDKN
-YELP
-YGE
-YPF
-YRD
-YUM
-YUM.P
-YUMC
-YUME
-YZC
-ZAYO
-ZB-A
-ZB-F
-ZB-G
-ZB-H
-ZBH
-ZBK
-ZEN
-ZF
-ZFC
-ZNH
-ZOES
-ZPIN
-ZTO
-ZTR
-ZTS
-ZX
+1.37
 
+
+{
+"symbol" : "AAPL",
+"exchange" : "NASDAQ",
+"id": "22144",
+"t" : "AAPL",
+"e" : "NASDAQ",
+"name" : "Apple Inc."
+, "f_reuters_url" : "http:2F2Fstocks.us.reuters.com2Fstocks2Fratios.asp?rpc=6626symbol=AAPL.O",
+"f_recent_quarter_date" : "Q3 (Sep 2716)",
+"f_annual_date" : "2016",
+"f_ttm_date" : "2015",
+"financials" :
+[{
+"f_type" : "Income26nbsp3BStatement"
+,"url" : "http://www.google.com/finance?fstype=ii&q=NASDAQ:AAPL"
+,"f_figures" :
+[
+{
+"title" : ""
+,"recent_quarter" : "46,852.00"
+,"annual" : "215,639.00"
+,"ttm" : "233,715.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "46,852.00"
+,"annual" : "215,639.00"
+,"ttm" : "233,715.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "29,039.00"
+,"annual" : "131,376.00"
+,"ttm" : "140,089.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "17,813.00"
+,"annual" : "84,263.00"
+,"ttm" : "93,626.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "3,482.00"
+,"annual" : "14,194.00"
+,"ttm" : "14,329.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "2,570.00"
+,"annual" : "10,045.00"
+,"ttm" : "8,067.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "35,091.00"
+,"annual" : "155,615.00"
+,"ttm" : "162,485.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "11,761.00"
+,"annual" : "60,024.00"
+,"ttm" : "71,230.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-159.00"
+,"annual" : "-1,195.00"
+,"ttm" : "-903.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "12,188.00"
+,"annual" : "61,372.00"
+,"ttm" : "72,515.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "9,014.00"
+,"annual" : "45,687.00"
+,"ttm" : "53,394.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "9,014.00"
+,"annual" : "45,687.00"
+,"ttm" : "53,394.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "9,014.00"
+,"annual" : "45,687.00"
+,"ttm" : "53,394.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "9,014.00"
+,"annual" : "45,687.00"
+,"ttm" : "53,394.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "9,014.00"
+,"annual" : "45,687.00"
+,"ttm" : "53,394.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "5,393.33"
+,"annual" : "5,500.28"
+,"ttm" : "5,793.07"
+},
+{
+"title" : ""
+,"recent_quarter" : "1.67"
+,"annual" : "8.31"
+,"ttm" : "9.22"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "0.57"
+,"annual" : "2.18"
+,"ttm" : "1.98"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "1.67"
+,"annual" : "8.31"
+,"ttm" : "9.22"
+}
+]
+},
+{
+"f_type" : "Balance26nbsp3BSheet"
+,"url" : "http://www.google.com/finance?fstype=bi&q=NASDAQ:AAPL"
+,"f_figures" :
+[
+{
+"title" : ""
+,"recent_quarter" : "11,883.00"
+,"annual" : "11,883.00"
+,"ttm" : "9,731.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "46,671.00"
+,"annual" : "46,671.00"
+,"ttm" : "20,481.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "67,155.00"
+,"annual" : "67,155.00"
+,"ttm" : "41,601.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "15,754.00"
+,"annual" : "15,754.00"
+,"ttm" : "16,849.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "29,299.00"
+,"annual" : "29,299.00"
+,"ttm" : "30,343.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "2,132.00"
+,"annual" : "2,132.00"
+,"ttm" : "2,349.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "8,283.00"
+,"annual" : "8,283.00"
+,"ttm" : "15,085.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "106,869.00"
+,"annual" : "106,869.00"
+,"ttm" : "89,378.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "61,245.00"
+,"annual" : "61,245.00"
+,"ttm" : "49,257.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-34,235.00"
+,"annual" : "-34,235.00"
+,"ttm" : "-26,786.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "5,414.00"
+,"annual" : "5,414.00"
+,"ttm" : "5,116.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "3,206.00"
+,"annual" : "3,206.00"
+,"ttm" : "3,893.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "170,430.00"
+,"annual" : "170,430.00"
+,"ttm" : "164,065.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "8,757.00"
+,"annual" : "8,757.00"
+,"ttm" : "5,422.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "321,686.00"
+,"annual" : "321,686.00"
+,"ttm" : "290,345.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "37,294.00"
+,"annual" : "37,294.00"
+,"ttm" : "35,490.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "20,951.00"
+,"annual" : "20,951.00"
+,"ttm" : "24,169.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "8,105.00"
+,"annual" : "8,105.00"
+,"ttm" : "8,499.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "3,500.00"
+,"annual" : "3,500.00"
+,"ttm" : "2,500.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "9,156.00"
+,"annual" : "9,156.00"
+,"ttm" : "9,952.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "79,006.00"
+,"annual" : "79,006.00"
+,"ttm" : "80,610.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "75,427.00"
+,"annual" : "75,427.00"
+,"ttm" : "53,329.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "75,427.00"
+,"annual" : "75,427.00"
+,"ttm" : "53,329.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "87,032.00"
+,"annual" : "87,032.00"
+,"ttm" : "64,328.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "26,019.00"
+,"annual" : "26,019.00"
+,"ttm" : "24,062.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "12,985.00"
+,"annual" : "12,985.00"
+,"ttm" : "12,989.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "193,437.00"
+,"annual" : "193,437.00"
+,"ttm" : "170,990.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "31,251.00"
+,"annual" : "31,251.00"
+,"ttm" : "27,416.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "96,364.00"
+,"annual" : "96,364.00"
+,"ttm" : "92,284.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "1,174.00"
+,"annual" : "1,174.00"
+,"ttm" : "-464.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "128,249.00"
+,"annual" : "128,249.00"
+,"ttm" : "119,355.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "321,686.00"
+,"annual" : "321,686.00"
+,"ttm" : "290,345.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "5,336.17"
+,"annual" : "5,336.17"
+,"ttm" : "5,578.75"
+}
+]
+},
+{
+"f_type" : "Cash26nbsp3BFlow"
+,"url" : "http://www.google.com/finance?fstype=ci&q=NASDAQ:AAPL"
+,"f_figures" :
+[
+{
+"title" : ""
+,"recent_quarter" : "45,687.00"
+,"annual" : "45,687.00"
+,"ttm" : "53,394.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "10,505.00"
+,"annual" : "10,505.00"
+,"ttm" : "11,257.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "4,938.00"
+,"annual" : "4,938.00"
+,"ttm" : "1,382.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "4,210.00"
+,"annual" : "4,210.00"
+,"ttm" : "3,586.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "484.00"
+,"annual" : "484.00"
+,"ttm" : "11,647.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "65,824.00"
+,"annual" : "65,824.00"
+,"ttm" : "81,266.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-13,548.00"
+,"annual" : "-13,548.00"
+,"ttm" : "-11,488.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-32,429.00"
+,"annual" : "-32,429.00"
+,"ttm" : "-44,786.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-45,977.00"
+,"annual" : "-45,977.00"
+,"ttm" : "-56,274.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-1,163.00"
+,"annual" : "-1,163.00"
+,"ttm" : "-750.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-12,150.00"
+,"annual" : "-12,150.00"
+,"ttm" : "-11,561.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-29,227.00"
+,"annual" : "-29,227.00"
+,"ttm" : "-34,710.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "22,057.00"
+,"annual" : "22,057.00"
+,"ttm" : "29,305.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-20,483.00"
+,"annual" : "-20,483.00"
+,"ttm" : "-17,716.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "-"
+,"annual" : "-"
+,"ttm" : "-"
+},
+{
+"title" : ""
+,"recent_quarter" : "-636.00"
+,"annual" : "-636.00"
+,"ttm" : "7,276.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "1,316.00"
+,"annual" : "1,316.00"
+,"ttm" : "514.00"
+},
+{
+"title" : ""
+,"recent_quarter" : "10,444.00"
+,"annual" : "10,444.00"
+,"ttm" : "13,252.00"
+}
+]
+}],
+"kr_recent_quarter_date" : "Q3 (Sep 2716)",
+"kr_annual_date" : "2016",
+"kr_ttm_date" : "TTM",
+"keyratios" :
+[
+{
+"title" : "Net profit margin",
+"recent_quarter" : "19.24%",
+"annual" : "21.19%",
+"ttm" : "21.19%"
+},
+{
+"title" : "Operating margin",
+"recent_quarter" : "25.10%",
+"annual" : "27.84%",
+"ttm" : "27.84%"
+},
+{
+"title" : "EBITD margin",
+"recent_quarter" : "",
+"annual" : "32.38%",
+"ttm" : "32.71%"
+},
+{
+"title" : "Return on average assets",
+"recent_quarter" : "11.53%",
+"annual" : "14.93%",
+"ttm" : "14.93%"
+},
+{
+"title" : "Return on average equity",
+"recent_quarter" : "28.38%",
+"annual" : "36.90%",
+"ttm" : "36.90%"
+},
+{
+"title" : "Employees",
+"recent_quarter" : "116,000",
+"annual" : "-",
+"ttm" : "-"
+}
+]
+, "c" : "-0.57",
+"l" : "111.23",
+"cp" : "-0.51",
+"ccol" : "chr",
+"op" : "111.36",
+"hi" : "111.52",
+"lo" : "110.33",
+"vo" : "27.43M",
+"avvo" : "35.05M",
+"hi52" : "119.86",
+"lo52" : "89.47",
+"mc" : "593.48B",
+"pe" : "13.44",
+"fwpe" : "",
+"beta" : "1.37",
+"eps" : "8.28",
+"dy" : "2.05",
+"ldiv" : "0.57",
+"shares" : "5.33B",
+"instown" : "59%",
+"eo":""
+, "sid" : "us-TRBC:57",
+"sname" : "Technology",
+"iid" : "us-TRBC:5710601010",
+"iname" : "Computer Hardware - NEC"
+, "related" : [
+{
+"id" : "22144",
+"name" : "Apple Inc.",
+"t" : "AAPL",
+"e" : "NASDAQ",
+"l" : "111.23",
+"c" : "-0.57",
+"mc" : "593.48B",
+"cp" : "-0.51",
+"ccol" : "chr"
+}
+,
+{
+"id" : "180086490123759",
+"name" : "SAMSUNG ELECTRONIC PFD KRW5000",
+"t" : "SSNNF",
+"e" : "OTCMKTS",
+"l" : "0.00000",
+"c" : "",
+"mc" : "",
+"cp" : "",
+"ccol" : ""
+}
+,
+{
+"id" : "358464",
+"name" : "Microsoft Corporation",
+"t" : "MSFT",
+"e" : "NASDAQ",
+"l" : "60.40",
+"c" : "-0.72",
+"mc" : "471.64B",
+"cp" : "-1.18",
+"ccol" : "chr"
+}
+,
+{
+"id" : "664887",
+"name" : "Verizon Communications Inc.",
+"t" : "VZ",
+"e" : "NYSE",
+"l" : "50.23",
+"c" : "+0.74",
+"mc" : "207.83B",
+"cp" : "1.50",
+"ccol" : "chg"
+}
+,
+{
+"id" : "17154",
+"name" : "HP Inc",
+"t" : "HPQ",
+"e" : "NYSE",
+"l" : "14.87",
+"c" : "-1.08",
+"mc" : "25.36B",
+"cp" : "-6.77",
+"ccol" : "chr"
+}
+,
+{
+"id" : "33095",
+"name" : "Sony Corp (ADR)",
+"t" : "SNE",
+"e" : "NYSE",
+"l" : "30.06",
+"c" : "-0.12",
+"mc" : "38.64B",
+"cp" : "-0.40",
+"ccol" : "chr"
+}
+,
+{
+"id" : "7583206",
+"name" : "HTC CORPORATION SPON GDR REP 4 ORD REG27S27",
+"t" : "HTCKF",
+"e" : "OTCMKTS",
+"l" : "10.25",
+"c" : "0.00",
+"mc" : "2.11B",
+"cp" : "0.00",
+"ccol" : "chb"
+}
+,
+{
+"id" : "694653",
+"name" : "Alphabet Inc",
+"t" : "GOOGL",
+"e" : "NASDAQ",
+"l" : "779.00",
+"c" : "-6.00",
+"mc" : "531.32B",
+"cp" : "-0.76",
+"ccol" : "chr"
+}
+,
+{
+"id" : "661895",
+"name" : "Deutsche Telekom AG (ADR)",
+"t" : "DTEGY",
+"e" : "OTCMKTS",
+"l" : "15.44",
+"c" : "-0.13",
+"mc" : "73.65B",
+"cp" : "-0.83",
+"ccol" : "chr"
+}
+,
+{
+"id" : "658723",
+"name" : "SanDisk Corporation",
+"t" : "SNDK",
+"e" : "NASDAQ",
+"l" : "76.18",
+"c" : "",
+"mc" : "15.38B",
+"cp" : "",
+"ccol" : ""
+}
+,
+{
+"id" : "662925",
+"name" : "NVIDIA Corporation",
+"t" : "NVDA",
+"e" : "NASDAQ",
+"l" : "93.97",
+"c" : "+0.46",
+"mc" : "50.64B",
+"cp" : "0.49",
+"ccol" : "chg"
+}
+]
+, "summary" : [{
+"reuters_url" : "http:2F2Fstocks.us.reuters.com2Fstocks2FfullDescription.asp?rpc=6626symbol=AAPL.O",
+"address": "1 Infinite Loop, CUPERTINO, CA 95014-2083, United States",
+"phone": "+1-408-9961010",
+"url": "http:2F2Fwww.apple.com",
+"overview" : "Apple Inc. (Apple) designs, manufactures and markets mobile communication and media devices, personal computers, and portable digital music players, and a variety of related software, services, peripherals, networking solutions, and third-party digital content and applications. The Company27s products and services include iPhone, iPad, Mac, iPod, Apple TV, a portfolio of consumer and professional software applications, the iOS and OS X operating systems, iCloud, and a variety of accessory, service and support offerings. The Company also delivers digital content and applications through the iTunes Store, App StoreSM, iBookstoreSM, and Mac App Store. The Company distributes its products worldwide through its retail stores, online stores, and direct sales force, as well as through third-party cellular network carriers, wholesalers, retailers, and value-added resellers. In February 2012, the Company acquired app-search engine Chomp."
+} ]
+, "management" : [
+{
+"name" : "Art D. Levinson Ph.D.",
+"age" : "65",
+"title" : "Independent Chairman of the Board"
+}
+,
+{
+"name" : "Timothy D. Cook",
+"age" : "55",
+"title" : "Chief Executive Officer, Director"
+}
+,
+{
+"name" : "Luca Maestri",
+"age" : "52",
+"title" : "Chief Financial Officer, Senior Vice President, Principal Accounting Officer"
+}
+,
+{
+"name" : "Jeff Williams",
+"age" : "52",
+"title" : "Chief Operating Officer"
+}
+,
+{
+"name" : "Durward Bruce Sewell",
+"age" : "57",
+"title" : "Senior Vice President, General Counsel, Secretary"
+}
+,
+{
+"name" : "Phil Schiller",
+"age" : "55",
+"title" : "Senior Vice President - Worldwide Marketing"
+}
+,
+{
+"name" : "Angela J. Ahrendts",
+"age" : "55",
+"title" : "Senior Vice President - Retail and Online Stores"
+}
+,
+{
+"name" : "Eddy Cue",
+"age" : "52",
+"title" : "Senior Vice President - Internet Software and Services"
+}
+,
+{
+"name" : "Craig Federighi",
+"age" : "46",
+"title" : "Senior Vice President - Software Engineering"
+}
+,
+{
+"name" : "Daniel J Riccio Jr",
+"age" : "53",
+"title" : "Senior Vice President - Hardware Engineering"
+}
+]
+,"moreresources" : [
+{ "name" : "Estimates" , "url" : "http:2F2Fwww.marketwatch.com2Ftools2Fquotes2Fsnapshot.asp?symb=AAPL26pg=analyst"},
+{ "name" : "SEC Filings" , "url" : "http:2F2Fgoogle.brand.edgar-online.com2F?sym=AAPL"},
+{ "name" : "Major Holders" , "url" : "http:2F2Finvesting.money.msn.com2Finvestments2Finstitutional-ownership?symbol=AAPL"}
+,
+{ "name" : "Options" , "url" : "http:2F2Fwww.marketwatch.com2Ftools2Fquotes2Foptions1.asp?symb=AAPL"},
+{ "name" : "Research" , "url" : "http:2F2Ffinance.yahoo.com2Fq2Frr?s=AAPL"}
+]
+, "events" : [
+]
+}

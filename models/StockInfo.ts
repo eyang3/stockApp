@@ -9,6 +9,7 @@ export interface OptionData {
 export interface StockInfo {
     date: Date;
     symbol: string;
+    eps: number;
     info: {
         gets: OptionData[];
         puts: OptionData[];
