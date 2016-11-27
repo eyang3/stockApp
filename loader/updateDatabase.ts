@@ -169,7 +169,6 @@ export class DBWriter extends Writable {
     }
     async _write(chunk: StockInfo, encoding: string, next: Function) {
         this.buffer.push(chunk);
-        console.log('hello');
         if (this.buffer.length === MAX_BUFFER) {
             await dbWrite(this.buffer);
             this.buffer = [];
@@ -186,6 +185,11 @@ export class LookupData extends Transform {
     async _transform(chunk: string, encoding: string, next: Function) {
         let stockInfo: StockInfo = await getBasicData(chunk);
         let optionData = await getOptionData(chunk);
+        await new Promise((resolve) => {
+            setTimeout(() => {
+                resolve();
+            }, 1000);
+        });
         stockInfo.info.optionPriceConsensus = optionData.mean;
         stockInfo.info.optionPriceVariance = optionData.variance;
         stockInfo.info.optionPriceSkew = optionData.skew;
