@@ -15,6 +15,7 @@
     "pg-promise": "^5.4.3",
     "request": "^2.79.0",
     "sequelize": "^3.18.0",
+    "simple-statistics": "^2.2.0",
     "stream-try-catch": "0.0.2"
   },
   "devDependencies": {

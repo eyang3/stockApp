@@ -1,17 +1,26 @@
 import request = require('request');
 import DB = require('../db/DB');
 import { Readable, Writable, Transform } from 'stream';
-import { StockInfo, OptionData } from '../models/StockInfo';
+import { StockInfo } from '../models/StockInfo';
 import _ = require('lodash');
 import fs = require('fs');
-import bluebird = require('bluebird');
+
+var stats = require('simple-statistics');
 
 const db = DB.db;
 const MAX_BUFFER = 100;
 
-function getBasicData(stock: string) {
+function getVolume(volumeString: string) {
+    if (volumeString.indexOf('M')) {
+        volumeString = volumeString.replace('M', '');
+        return parseFloat(volumeString) * 1000000;
+    }
+    return parseFloat(volumeString);
+}
+
+function getBasicData(stock: string): Promise<any> {
     let url = `http://www.google.com/finance?q=${stock}\&output=json`;
-    return new bluebird((resolve: Function, reject: Function) => {
+    return new Promise((resolve: Function, reject: Function) => {
         request(url, (error: any, response: any, body: string) => {
             if (error) {
                 reject(error);
@@ -19,33 +28,84 @@ function getBasicData(stock: string) {
             body = body.replace(`// [`, '');
             body = body.replace(/\\x/g, '');
             body = body.substring(0, body.length - 2);
-            let data = JSON.parse(body);
-            console.log(data.beta);
-            resolve(body);
+            let data: any = {};
+            try {
+                data = JSON.parse(body);
+            } catch (e) {
+                console.log(url);
+            }
+            var stockInfo: StockInfo = <StockInfo>{
+                symbol: data.symbol,
+                date: new Date(),
+                info: {
+                    eps: parseFloat(data.eps),
+                    beta: parseFloat(data.beta),
+                    price: parseFloat(data.l),
+                    div: parseFloat(data.ldiv),
+                    volume: getVolume(data.vo)
+                }
+            };
+            resolve(stockInfo);
         });
     });
 
 }
 
-function getOptionData(stock: string) {
+function getOptionData(stock: string): Promise<any> {
     let url = `http://www.google.com/finance/option_chain?q=${stock}\&output=json`;
-    return new bluebird((resolve: Function, reject: Function) => {
+    return new Promise((resolve: Function, reject: Function) => {
         request(url, (error: any, response: any, body: string) => {
             if (error) {
                 reject(error);
             }
             let data = body.replace(/(\w+:)(\d+\.?\d*)/g, '$1\"$2\"');
             data = data.replace(/(\w+):/g, '\"$1\":');
-            resolve(JSON.parse(data));
+            let optionData = JSON.parse(data);
+            let exprDate = new Date(optionData.expiry.y, optionData.expiry.m - 1, optionData.expiry.d).toString();
+            let totalPrice = 0;
+            let priceVec: number[] = [];
+            _.each(optionData.puts, (putInfo) => {
+                let optionDate = new Date(putInfo.expiry);
+                if (optionDate.toString() === exprDate) {
+                    let oi = parseInt(putInfo.oi);
+                    if (oi != null) {
+                        let price = parseFloat(putInfo.strike) - parseFloat(putInfo.p);
+                        if (!isNaN(price)) {
+                            for (let i = 0; i < oi; i++) {
+                                priceVec.push(price);
+                            }
+                        }
+                    }
+                }
+            });
+            _.each(optionData.calls, (getInfo) => {
+                if (new Date(getInfo.expiry).toString() === exprDate) {
+                    let oi = parseInt(getInfo.oi);
+                    if (oi != null) {
+                        let price = parseFloat(getInfo.strike) + parseFloat(getInfo.p);
+                        if (!isNaN(price)) {
+                            for (let i = 0; i < oi; i++) {
+                                priceVec.push(price);
+                            }
+                        }
+                    }
+                }
+            });
+            resolve({
+                mean: stats.mean(priceVec), skew: stats.sampleSkewness(priceVec),
+                variance: stats.variance(priceVec)
+            });
         });
     });
 
 }
 
-getBasicData('AAPL')
+/*getBasicData('AAPL')
     .then((response) => {
         console.log(response);
     });
+
+*/
 
 async function dbWrite(buffer: StockInfo[]) {
     const query = 'INSERT INTO stockinfo(symbol, date, info) values ($1, $2, $3)';
@@ -69,7 +129,13 @@ export class FileProcess extends Transform {
         this.lastLine = lines[lines.length - 1];
         for (let i = 0; i < lines.length - 1; i++) {
             if (!this.first) {
-                this.push(lines[i].split(',')[0]);
+                let val = lines[i].split(',')[0];
+                if (val !== '') {
+                    this.push(val);
+
+                } else {
+                    this.push(null);
+                }
             }
             this.first = false;
 
@@ -79,7 +145,13 @@ export class FileProcess extends Transform {
     _flush() {
         var lines = this.lastLine.split('\n');
         for (let i = 0; i < lines.length; i++) {
-            this.push(lines[i].split(',')[0]);
+            let val = lines[i].split(',')[0];
+            if (val !== '') {
+                this.push(val);
+            } else {
+                this.push(null);
+            }
+
         }
     }
 }
@@ -89,38 +161,47 @@ export class DBWriter extends Writable {
     buffer: StockInfo[] = [];
     constructor() {
         super({ objectMode: true });
+        this.on('finish', async () => {
+            await dbWrite(this.buffer);
+            this.buffer = [];
+            this.emit('flushed');
+        });
     }
     async _write(chunk: StockInfo, encoding: string, next: Function) {
         this.buffer.push(chunk);
+        console.log('hello');
         if (this.buffer.length === MAX_BUFFER) {
             await dbWrite(this.buffer);
             this.buffer = [];
         }
         next();
     }
-    async _flush() {
-        await dbWrite(this.buffer);
-        this.buffer = [];
-    }
+
 }
 
 export class LookupData extends Transform {
-
     constructor() {
         super({ objectMode: true });
     }
-    _transform(chunk: string, encoding: string, next: Function) {
+    async _transform(chunk: string, encoding: string, next: Function) {
+        let stockInfo: StockInfo = await getBasicData(chunk);
+        let optionData = await getOptionData(chunk);
+        stockInfo.info.optionPriceConsensus = optionData.mean;
+        stockInfo.info.optionPriceVariance = optionData.variance;
+        stockInfo.info.optionPriceSkew = optionData.skew;
+        this.push(stockInfo);
         next();
     }
 }
 
-/*let dataStream = fs.createReadStream(__dirname + '/../../StockList/StockList', { encoding: 'UTF-8' })
-    .pipe(new FileProcess());
+let dbf = new DBWriter();
 
-dataStream.on('data', (chunk: string) => {
-    console.log(chunk);
+
+let dataStream = fs.createReadStream(__dirname + '/../../StockList/TestList', { encoding: 'UTF-8' })
+    .pipe(new FileProcess())
+    .pipe(new LookupData())
+    .pipe(dbf);
+
+dbf.on('flushed', () => {
+    console.log('load completed');
 });
-
-dataStream.on('end', () => {
-    console.log('done');
-});*/
