@@ -11,6 +11,9 @@ const db = DB.db;
 const MAX_BUFFER = 100;
 
 function getVolume(volumeString: string) {
+    if (volumeString == null) {
+    	return 0;
+    }
     if (volumeString.indexOf('M')) {
         volumeString = volumeString.replace('M', '');
         return parseFloat(volumeString) * 1000000;
@@ -184,12 +187,16 @@ export class LookupData extends Transform {
         super({ objectMode: true });
     }
     async _transform(chunk: string, encoding: string, next: Function) {
-        let stockInfo: StockInfo = await getBasicData(chunk);
-        let optionData = await getOptionData(chunk);
-        stockInfo.info.optionPriceConsensus = optionData.mean;
-        stockInfo.info.optionPriceVariance = optionData.variance;
-        stockInfo.info.optionPriceSkew = optionData.skew;
-        this.push(stockInfo);
+    	try {
+        	let stockInfo: StockInfo = await getBasicData(chunk);
+        	let optionData = await getOptionData(chunk);
+        	stockInfo.info.optionPriceConsensus = optionData.mean;
+        	stockInfo.info.optionPriceVariance = optionData.variance;
+        	stockInfo.info.optionPriceSkew = optionData.skew;
+        	this.push(stockInfo);
+	} catch (e) {
+		console.log(e);
+	}
         next();
     }
 }
@@ -197,7 +204,7 @@ export class LookupData extends Transform {
 let dbf = new DBWriter();
 
 
-let dataStream = fs.createReadStream(__dirname + '/../../StockList/TestList', { encoding: 'UTF-8' })
+let dataStream = fs.createReadStream(__dirname + '/../../StockList/StockList', { encoding: 'UTF-8' })
     .pipe(new FileProcess())
     .pipe(new LookupData())
     .pipe(dbf);
