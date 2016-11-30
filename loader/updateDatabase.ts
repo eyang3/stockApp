@@ -8,7 +8,7 @@ import fs = require('fs');
 var stats = require('simple-statistics');
 
 const db = DB.db;
-const MAX_BUFFER = 100;
+const MAX_BUFFER = 10;
 
 function getVolume(volumeString: string) {
     if (volumeString == null) {
@@ -116,12 +116,16 @@ function getOptionData(stock: string): Promise<any> {
 
 async function dbWrite(buffer: StockInfo[]) {
     const query = 'INSERT INTO stockinfo(symbol, date, info) values ($1, $2, $3)';
-    await db.tx((t) => {
-        let queryBuffer = _.map(buffer, (item: StockInfo) => {
-            return t.none(query, [item.symbol, item.date, item.info]);
+    try {
+        await db.tx((t) => {
+            let queryBuffer = _.map(buffer, (item: StockInfo) => {
+                return t.none(query, [item.symbol, item.date, item.info]);
+            });
+            return t.batch(queryBuffer);
         });
-        return t.batch(queryBuffer);
-    });
+     } catch (e) {
+     	console.log(e);
+     }
 }
 
 export class FileProcess extends Transform {
@@ -190,6 +194,7 @@ export class LookupData extends Transform {
         super({ objectMode: true });
     }
     async _transform(chunk: string, encoding: string, next: Function) {
+    	console.log('current stock: ', chunk);
         try {
             let stockInfo: StockInfo = await getBasicData(chunk);
             let optionData = await getOptionData(chunk);
@@ -201,8 +206,11 @@ export class LookupData extends Transform {
             stockInfo.info.optionPriceConsensus = optionData.mean;
             stockInfo.info.optionPriceVariance = optionData.variance;
             stockInfo.info.optionPriceSkew = optionData.skew;
-            this.push(stockInfo);
+	    if (stockInfo.symbol != null) {
+	        this.push(stockInfo);
+	    }
         } catch (e) {
+	    console.log(chunk);
             console.log(e);
         }
         next();
