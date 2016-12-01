@@ -97,7 +97,8 @@ function getOptionData(stock: string): Promise<any> {
                 });
                 resolve({
                     mean: stats.mean(priceVec), skew: stats.sampleSkewness(priceVec),
-                    variance: stats.variance(priceVec)
+                    variance: stats.variance(priceVec),
+		    expiration: exprDate
                 });
             } catch (e) {
                 reject(e);
@@ -206,6 +207,7 @@ export class LookupData extends Transform {
             stockInfo.info.optionPriceConsensus = optionData.mean;
             stockInfo.info.optionPriceVariance = optionData.variance;
             stockInfo.info.optionPriceSkew = optionData.skew;
+            stockInfo.info.optionExpiration = optionData.expiration;
 	    if (stockInfo.symbol != null) {
 	        this.push(stockInfo);
 	    }

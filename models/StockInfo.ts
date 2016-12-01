@@ -11,5 +11,6 @@ export interface StockInfo {
         optionPriceVariance: number;
         optionPriceSkew: number;
         volume: number;
+	optionExpiration: Date;
     };
 }

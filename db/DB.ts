@@ -9,4 +9,4 @@ options.database = 'stockApp';
 options.password = process.env.POSTGRES_PW;
 options.user = process.env.POSTGRES_USER;
 console.log(options);
-export var db = pgp(options); 
+export var db = pgp(options);
