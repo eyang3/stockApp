@@ -22,7 +22,7 @@ function getVolume(volumeString: string) {
 }
 
 function getBasicData(stock: string): Promise<any> {
-    let url = `http://www.google.com/finance?q=${stock}\&output=json`;
+    let url = `http://www.google.com/finance?q=${stock}:NASDAQ\&output=json`;
     return new Promise((resolve: Function, reject: Function) => {
         request(url, (error: any, response: any, body: string) => {
             if (error) {
@@ -55,42 +55,37 @@ function getBasicData(stock: string): Promise<any> {
 }
 
 function getOptionData(stock: string): Promise<any> {
-    let url = `http://www.google.com/finance/option_chain?q=${stock}\&output=json`;
+    let url = `https://query2.finance.yahoo.com/v7/finance/options/${stock}`;
     return new Promise((resolve: Function, reject: Function) => {
         request(url, (error: any, response: any, body: string) => {
             if (error) {
                 reject(error);
             }
             try {
-                let data = body.replace(/(\w+:)(\d+\.?\d*)/g, '$1\"$2\"');
-                data = data.replace(/(\w+):/g, '\"$1\":');
-                let optionData = JSON.parse(data);
-                let exprDate = new Date(optionData.expiry.y, optionData.expiry.m - 1, optionData.expiry.d).toString();
+                let optionData = JSON.parse(body);
+                let optionChain = optionData.optionChain.result[0].options[0];
+                let exprDate = new Date(optionChain.expirationDate * 1000);
                 let totalPrice = 0;
                 let priceVec: number[] = [];
-                _.each(optionData.puts, (putInfo) => {
-                    let optionDate = new Date(putInfo.expiry);
-                    if (optionDate.toString() === exprDate) {
-                        let oi = parseInt(putInfo.oi);
-                        if (oi != null) {
-                            let price = parseFloat(putInfo.strike) - parseFloat(putInfo.p);
-                            if (!isNaN(price)) {
-                                for (let i = 0; i < oi; i++) {
-                                    priceVec.push(price);
-                                }
+                _.each(optionChain.puts, (putInfo) => {
+                    let oi = parseInt(putInfo.openInterest);
+                    if (oi != null) {
+                        let price = parseFloat(putInfo.strike) - parseFloat(putInfo.lastprice);
+                        if (!isNaN(price)) {
+                            for (let i = 0; i < oi; i++) {
+                                priceVec.push(price);
                             }
                         }
                     }
                 });
-                _.each(optionData.calls, (getInfo) => {
-                    if (new Date(getInfo.expiry).toString() === exprDate) {
-                        let oi = parseInt(getInfo.oi);
-                        if (oi != null) {
-                            let price = parseFloat(getInfo.strike) + parseFloat(getInfo.p);
-                            if (!isNaN(price)) {
-                                for (let i = 0; i < oi; i++) {
-                                    priceVec.push(price);
-                                }
+                _.each(optionChain.calls, (getInfo) => {
+                    console.log(getInfo.expiration);
+                    let oi = parseInt(getInfo.openInterest);
+                    if (oi != null) {
+                        let price = parseFloat(getInfo.strike) + parseFloat(getInfo.lastPrice);
+                        if (!isNaN(price)) {
+                            for (let i = 0; i < oi; i++) {
+                                priceVec.push(price);
                             }
                         }
                     }
@@ -98,7 +93,7 @@ function getOptionData(stock: string): Promise<any> {
                 resolve({
                     mean: stats.mean(priceVec), skew: stats.sampleSkewness(priceVec),
                     variance: stats.variance(priceVec),
-		    expiration: exprDate
+                    expiration: exprDate
                 });
             } catch (e) {
                 reject(e);
@@ -108,12 +103,6 @@ function getOptionData(stock: string): Promise<any> {
 
 }
 
-/*getBasicData('AAPL')
-    .then((response) => {
-        console.log(response);
-    });
-
-*/
 
 async function dbWrite(buffer: StockInfo[]) {
     const query = 'INSERT INTO stockinfo(symbol, date, info) values ($1, $2, $3)';
@@ -124,9 +113,9 @@ async function dbWrite(buffer: StockInfo[]) {
             });
             return t.batch(queryBuffer);
         });
-     } catch (e) {
-     	console.log(e);
-     }
+    } catch (e) {
+        console.log(e);
+    }
 }
 
 export class FileProcess extends Transform {
@@ -195,7 +184,7 @@ export class LookupData extends Transform {
         super({ objectMode: true });
     }
     async _transform(chunk: string, encoding: string, next: Function) {
-    	console.log('current stock: ', chunk);
+        console.log('current stock: ', chunk);
         try {
             let stockInfo: StockInfo = await getBasicData(chunk);
             let optionData = await getOptionData(chunk);
@@ -208,11 +197,11 @@ export class LookupData extends Transform {
             stockInfo.info.optionPriceVariance = optionData.variance;
             stockInfo.info.optionPriceSkew = optionData.skew;
             stockInfo.info.optionExpiration = optionData.expiration;
-	    if (stockInfo.symbol != null) {
-	        this.push(stockInfo);
-	    }
+            if (stockInfo.symbol != null) {
+                this.push(stockInfo);
+            }
         } catch (e) {
-	    console.log(chunk);
+            console.log(chunk);
             console.log(e);
         }
         next();

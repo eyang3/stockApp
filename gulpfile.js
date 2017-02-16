@@ -72,7 +72,8 @@ gulp.task('copy-configs', function () {
 });
 
 gulp.task('build', function (cb) {
-    sequence('tslint', 'typescript', 'copy-configs')(cb);
+    // sequence('tslint', 'typescript', 'copy-configs')(cb);
+     sequence('typescript', 'copy-configs')(cb);
 });
 
 gulp.task('clean', function (cb) {
