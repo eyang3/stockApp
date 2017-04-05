@@ -8,7 +8,7 @@ import fs = require('fs');
 var stats = require('simple-statistics');
 
 const db = DB.db;
-const MAX_BUFFER = 10;
+const MAX_BUFFER = 1;
 
 function getVolume(volumeString: string) {
     if (volumeString == null) {
@@ -22,30 +22,28 @@ function getVolume(volumeString: string) {
 }
 
 function getBasicData(stock: string): Promise<any> {
-    let url = `http://www.google.com/finance?q=${stock}:NASDAQ\&output=json`;
+	let url = `https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22${stock}%22)\&format=json\&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys\&callback=`
     return new Promise((resolve: Function, reject: Function) => {
         request(url, (error: any, response: any, body: string) => {
+	    var data: any;
             if (error) {
                 reject(error);
             }
-            body = body.replace(`// [`, '');
-            body = body.replace(/\\x/g, '');
-            body = body.substring(0, body.length - 2);
-            let data: any = {};
             try {
-                data = JSON.parse(body);
+                data = JSON.parse(body).query;
             } catch (e) {
                 console.log(url);
             }
             var stockInfo: StockInfo = <StockInfo>{
-                symbol: data.symbol,
+                symbol: data.results.quote.symbol,
                 date: new Date(),
                 info: {
-                    eps: parseFloat(data.eps),
-                    beta: parseFloat(data.beta),
-                    price: parseFloat(data.l),
-                    div: parseFloat(data.ldiv),
-                    volume: getVolume(data.vo)
+                    eps: data.results.quote.EarningsShare,
+                    beta: parseFloat(data.results.quote.PercentChangeFromFiftydayMovingAverage),
+                    price: data.results.quote.LastTradePriceOnly,
+                    div: data.results.quote.DividendYield,
+                    volume: data.results.quote.Volume
+
                 }
             };
             resolve(stockInfo);
@@ -54,11 +52,37 @@ function getBasicData(stock: string): Promise<any> {
 
 }
 
-function getOptionData(stock: string): Promise<any> {
+function getByExpiration(stock: string): Promise<any> {
     let url = `https://query2.finance.yahoo.com/v7/finance/options/${stock}`;
     return new Promise((resolve: Function, reject: Function) => {
         request(url, (error: any, response: any, body: string) => {
             if (error) {
+                reject(error);
+            }
+            let optionData = JSON.parse(body);
+	    let expirations = optionData.optionChain.result[0].expirationDates;
+	    let retValues = _.filter(expirations, (date: number) => {
+	    	let expDate = new Date(date * 1000);
+		if(expDate.getMonth() === new Date().getMonth()) {
+			return true;
+		}
+		if(expDate.getMonth() === new Date().getMonth() + 1) {
+			return true;
+		}
+		return false;
+	    });
+	    resolve(retValues);
+        });
+    });
+
+}
+function getOptionData(stock: string, date: number): Promise<any> {
+    let url = `https://query2.finance.yahoo.com/v7/finance/options/${stock}?date=${date}`;
+    console.log(url);
+    return new Promise((resolve: Function, reject: Function) => {
+        request(url, (error: any, response: any, body: string) => {
+            if (error) {
+	        console.log(error);
                 reject(error);
             }
             try {
@@ -79,7 +103,6 @@ function getOptionData(stock: string): Promise<any> {
                     }
                 });
                 _.each(optionChain.calls, (getInfo) => {
-                    console.log(getInfo.expiration);
                     let oi = parseInt(getInfo.openInterest);
                     if (oi != null) {
                         let price = parseFloat(getInfo.strike) + parseFloat(getInfo.lastPrice);
@@ -187,19 +210,26 @@ export class LookupData extends Transform {
         console.log('current stock: ', chunk);
         try {
             let stockInfo: StockInfo = await getBasicData(chunk);
-            let optionData = await getOptionData(chunk);
-            await new Promise((resolve) => {
-                setTimeout(() => {
-                    resolve();
-                }, 1000);
-            });
-            stockInfo.info.optionPriceConsensus = optionData.mean;
-            stockInfo.info.optionPriceVariance = optionData.variance;
-            stockInfo.info.optionPriceSkew = optionData.skew;
-            stockInfo.info.optionExpiration = optionData.expiration;
-            if (stockInfo.symbol != null) {
-                this.push(stockInfo);
-            }
+	    let expirations = await getByExpiration(chunk);
+	    console.log(stockInfo);
+	    for(let i = 0; i < expirations.length; i++) {
+		let optionData = await getOptionData(chunk, expirations[i]);
+            	await new Promise((resolve) => {
+                	setTimeout(() => {
+                    	resolve();
+                	}, 1000);
+            	});
+	        var t = _.clone(stockInfo);
+                t.info.optionPriceConsensus = optionData.mean;
+                t.info.optionPriceVariance = optionData.variance;
+                t.info.optionPriceSkew = optionData.skew;
+                t.info.optionExpiration = optionData.expiration;
+		console.log(t);
+                if (t.symbol != null) {
+		    console.log(t);
+                    this.push(t);
+                }
+	    } 
         } catch (e) {
             console.log(chunk);
             console.log(e);
